@@ -1,4 +1,4 @@
-# 🏭 LogiTrack: Inventory Management System
+# LogiTrack : Inventory Management System
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.28.0-red)
@@ -7,40 +7,40 @@
 
 LogiTrack is a modern, web-based inventory management system built with Python and Streamlit. It provides real-time optimization of warehouse inventory distribution, order management, and supply chain analytics.
 
-## 🌟 Features
+## a) Features
 
-### 📊 Dashboard & Analytics
+### 1) Dashboard & Analytics
 - Real-time inventory tracking
 - Warehouse utilization metrics
 - Order fulfillment statistics
 - Supply chain performance indicators
 - Interactive data visualizations
 
-### 🗺️ Inventory Distribution
+### 🗺2) Inventory Distribution
 - Multi-warehouse optimization
 - Geographic distribution mapping
 - Cost-effective allocation algorithms
 - Real-time route visualization
 
-### 📦 Order Management
+### 3) Order Management
 - Order tracking and status updates
 - Priority-based fulfillment
 - Delivery deadline monitoring
 - Automated allocation suggestions
 
-### 🏭 Warehouse Management
+### 4) Warehouse Management
 - Capacity utilization tracking
 - Stock level monitoring
 - Storage cost optimization
 - Location-based analytics
 
-### 🤝 Supplier Management
+### 5) Supplier Management
 - Supplier performance metrics
 - Reliability scoring
 - Lead time tracking
 - Quality assessment
 
-## 🚀 Getting Started
+## b) Getting Started
 
 ### Prerequisites
 - Python 3.9 or higher
@@ -71,7 +71,7 @@ LogiTrack is a modern, web-based inventory management system built with Python a
    streamlit run src/app.py
    ```
 
-## 📁 Project Structure
+## c) Project Structure
 ```
 logitrack/
 ├── src/
@@ -95,7 +95,7 @@ logitrack/
 └── LICENSE
 ```
 
-## 💻 Usage
+## d) Usage
 
 1. **Login:** Enter your credentials to access the system.
 2. **Data Source:** Choose between:
@@ -110,7 +110,7 @@ logitrack/
    - Optimization
    - User Guide
 
-## 📊 Data Format
+## e) Data Format
 
 ### Warehouse Data (CSV)
 ```
@@ -126,22 +126,14 @@ ORD001,2025-03-24,P001,500,2025-03-26,Pending,19.0760,72.8777
 ORD002,2025-03-24,P002,750,2025-03-25,Urgent,1.3521,103.8198
 ```
 
-## 🛠️ Configuration
+## f) Configuration
 The system supports various configuration options:
 - Database connections (MySQL, PostgreSQL, SQLite)
 - Optimization parameters
 - Visualization preferences
 - Time zone settings
 
-## 📈 Features in Development
-- Advanced forecasting algorithms
-- Mobile application
-- Real-time tracking integration
-- AI-powered optimization
-- Blockchain integration
-- Advanced reporting system
-
-## 🤝 Contributing
+## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
@@ -159,7 +151,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
    ```
 5. Open a Pull Request
 
-## 📝 License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 **Made with ❤️ by Tanish Poddar**
