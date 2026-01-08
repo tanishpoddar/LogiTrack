@@ -270,13 +270,17 @@ class DataLoader:
             (self.sales_df['date'] <= current_date)
         ].copy()
         
+        # Check if history is empty
+        if history.empty:
+            return history
+        
         # Add status and time since order
-        history['status'] = history.apply(
-            lambda x: 'Delivered' if x['date'] < current_date else 'In Progress',
-            axis=1
+        history.loc[:, 'status'] = history['date'].apply(
+            lambda x: 'Delivered' if pd.to_datetime(x) < current_date else 'In Progress'
         )
-        history['time_since_order'] = (current_date - history['date']).dt.total_seconds() / 3600
-        history['time_since_order'] = history['time_since_order'].apply(
+        
+        time_diff = (current_date - pd.to_datetime(history['date'])).dt.total_seconds() / 3600
+        history.loc[:, 'time_since_order'] = time_diff.apply(
             lambda x: f"{int(x)} hours ago" if x < 24 else f"{int(x/24)} days ago"
         )
         

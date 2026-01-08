@@ -349,7 +349,7 @@ class LogiTrackApp:
                 f"{(total_inventory/total_capacity)*100:.1f}% of capacity"
             )
         
-        pending_orders = len(self.data_loader.get_pending_orders(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+        pending_orders = len(self.data_loader.get_pending_orders(self.data_loader.current_datetime))
         with col2:
             st.metric("Pending Orders", pending_orders)
         
@@ -377,7 +377,7 @@ class LogiTrackApp:
         tabs = st.tabs(["Pending Orders", "Urgent Orders", "Order History"])
         
         with tabs[0]:
-            pending_orders = self.data_loader.get_pending_orders(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            pending_orders = self.data_loader.get_pending_orders(self.data_loader.current_datetime)
             st.dataframe(pending_orders)
             
         with tabs[1]:
@@ -385,7 +385,7 @@ class LogiTrackApp:
             st.dataframe(urgent_orders)
             
         with tabs[2]:
-            history = self.data_loader.get_order_history(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+            history = self.data_loader.get_order_history(self.data_loader.current_datetime)
             st.dataframe(history)
 
     def show_supplier_info(self):
