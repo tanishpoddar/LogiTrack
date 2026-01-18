@@ -752,7 +752,7 @@ class LogiTrackApp:
         st.markdown("---")
         st.markdown(
             "<p style='text-align: center;'>© 2025 | Made with ♥ by "
-            "<a href='https://github.com/tanishpoddar' target='_blank' "
+            "<a href='https://github.com/tanisheesh' target='_blank' "
             "style='color: inherit; text-decoration: none;'>Tanish Poddar</a></p>", 
             unsafe_allow_html=True
         )

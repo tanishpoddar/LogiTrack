@@ -51,7 +51,7 @@ LogiTrack is a modern, web-based inventory management system built with Python a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tanishpoddar/logitrack.git
+   git clone https://github.com/tanisheesh/logitrack.git
    cd logitrack
    ```
 
